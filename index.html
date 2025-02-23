@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/scss/css/home.css" />
+    <title>Cristian Piovani</title>
+  </head>
+  <body>
+    <div class="total-container">
+      <nav class="navbar">
+        <a class="link-style" href="">Home</a>
+        <a class="link-style" href="#progetti">Progetti</a>
+        <a class="link-style" href="./src/html/about-me.html">Chi sono</a>
+        <div class="lkdn-icon">
+          <a href="https://www.linkedin.com/in/cristianpiovani/"
+            ><img src="./src/imgs/icone/lkdn-logo-white.png" alt=""
+          /></a>
+        </div>
+      </nav>
+      <div class="start">
+        <div class="titles">
+          <h1 class="title">Hello world! I'm <span>Cristian Piovani</span></h1>
+          <h2 class="subtitle">Front-End Developer Student</h2>
+        </div>
+
+        <!-- GITHUB CARD -->
+        <section name="about">
+          <div class="github-card">
+            <div class="arrow-container">
+              <img
+                class="arrow"
+                src="./src/imgs/immagini/GitHubArrow.png"
+                alt=""
+              />
+            </div>
+            <a class="avatar-container" href="https://github.com/IlPiova"
+              ><img src="" alt="" class="user-avatar" id="avatar" />
+            </a>
+            <a
+              class="link-style"
+              href="https://github.com/IlPiova"
+              class="username"
+              id="username"
+            ></a>
+
+            <p id="bio"></p>
+            <div class="secondary-info">
+              <p id="place"></p>
+              <a
+                class="link-style"
+                href="https://github.com/IlPiova?tab=repositories"
+                id="repos"
+              ></a>
+            </div>
+          </div>
+        </section>
+      </div>
+      <section name="skills">
+        <h2 class="subtitle">Skills:</h2>
+        <div class="skills-container">
+          <div class="html-container">
+            <img src="./src/imgs/icone/html.png" alt="HTML" />
+            <div class="base-circle">
+              <div class="progress-circle" style="width: 70%"></div>
+            </div>
+          </div>
+
+          <div class="html-container">
+            <img src="./src/imgs/icone/css.png" alt="CSS" />
+            <div class="base-circle">
+              <div class="progress-circle" style="width: 50%"></div>
+            </div>
+          </div>
+
+          <div class="html-container">
+            <img src="./src/imgs/icone/javascript.png" alt="Javascript" />
+            <div class="base-circle">
+              <div class="progress-circle" style="width: 60%"></div>
+            </div>
+          </div>
+
+          <div class="html-container">
+            <img src="./src/imgs/icone/typescript.png" alt="Typescript" />
+            <div class="base-circle">
+              <div class="progress-circle" style="width: 40%"></div>
+            </div>
+          </div>
+
+          <div class="html-container">
+            <img src="./src/imgs/icone/git.png" alt="Git" />
+            <div class="base-circle">
+              <div class="progress-circle" style="width: 35%"></div>
+            </div>
+          </div>
+
+          <div class="html-container">
+            <img src="./src/imgs/icone/github-mark-white.png" alt="GitHub" />
+            <div class="base-circle">
+              <div class="progress-circle" style="width: 50%"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section name="projects">
+        <h2 class="subtitle" id="progetti">Progetti:</h2>
+        <div class="general-projects-container">
+          <div class="project-container">
+            <div class="project-image-container">
+              <a href="https://ilpiova.github.io/CSS-S2I-firstproject/">
+                <img
+                  class="project-image"
+                  src="src/imgs/immagini/portfolioScreen.png"
+                  alt=""
+              /></a>
+            </div>
+            <h4 class="project-name">Portfolio</h4>
+            <p class="project-description">
+              Primo progetto del master per Front-End Developer.<br />Il primo
+              sito completo che ho creato.
+            </p>
+            <div class="project-technologies">
+              <p class="technology">HTML</p>
+              <p class="technology">SCSS</p>
+              <p class="technology">GIT</p>
+              <p class="technology">GITHUB</p>
+            </div>
+            <div class="buttons">
+              <div class="site-button">
+                <a
+                  href="https://ilpiova.github.io/CSS-S2I-firstproject/"
+                  class="link-style"
+                  >Vai al sito</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- SIMLE COUNTER CONTAINER -->
+          <div class="project-container">
+            <div class="project-image-container">
+              <a href="https://s2i-ilpiova-simple-counter.netlify.app">
+                <img
+                  class="project-image"
+                  src="src/imgs/immagini/simpleCounteeScreen.png"
+                  alt=""
+              /></a>
+            </div>
+            <h4 class="project-name">Simple Counter</h4>
+            <p class="project-description">
+              Secondo progetto del master per Front-End Developer.<br />È stato
+              fondamentale per capire gli eventi in Javascript e soprattutto
+              migliorare nella precisione del codice. Permette di incrementare o
+              decrementare il contatore di una unità, e la converte in binario,
+              ottale ed esadecimale.
+            </p>
+            <div class="project-technologies">
+              <p class="technology">HTML</p>
+              <p class="technology">CSS</p>
+              <p class="technology">JAVASCRIPT</p>
+              <p class="technology">GIT</p>
+              <p class="technology">GITHUB</p>
+            </div>
+            <div class="buttons">
+              <div class="site-button">
+                <a
+                  href="https://s2i-ilpiova-simple-counter.netlify.app"
+                  class="link-style"
+                  >Vai al sito</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- HACKERNEWS CONTAINER -->
+          <div class="project-container">
+            <div class="project-image-container">
+              <a href="https://ilpiova-s2i-hackersnewsproject.netlify.app">
+                <img
+                  class="project-image"
+                  src="src/imgs/immagini/hackerNewsScreen.png"
+                  alt=""
+              /></a>
+            </div>
+            <h4 class="project-name">HackerNews API</h4>
+            <p class="project-description">
+              Terzo progetto del master per Front-End Developer.<br />Le sfide
+              più grandi sono state capire Javascript asincrono e Webpack.
+              Effettua una richiesta API a Hackernews per ottenere le notizie
+              appena uscite.
+            </p>
+            <div class="project-technologies">
+              <p class="technology">HTML</p>
+              <p class="technology">SCSS</p>
+              <p class="technology">JAVASCRIPT</p>
+              <p class="technology">REST-API</p>
+              <p class="technology">GIT</p>
+              <p class="technology">GITHUB</p>
+              <p class="technology">WEBPACK</p>
+              <p class="technology">AXIOS</p>
+            </div>
+            <div class="buttons">
+              <div class="site-button">
+                <a
+                  href="https://ilpiova-s2i-hackersnewsproject.netlify.app"
+                  class="link-style"
+                  >Vai al sito</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- MOOV TYPESCRIPT CONTAINER -->
+          <div class="project-container">
+            <div class="project-image-container">
+              <a
+                href="https://codepen.io/Cristian-Piovani/pen/vEYOawW?editors=0011"
+              >
+                <img
+                  class="project-image"
+                  src="src/imgs/immagini/moovScreen.png"
+                  alt=""
+              /></a>
+            </div>
+            <h4 class="project-name">
+              Moov: servizio di sharing di mezzi di trasporto
+            </h4>
+            <p class="project-description">
+              Quarto progetto del master per Front-End Developer.<br />Costruzione
+              della struttura organizzativa base di un servizio di sharing di
+              monopattini, scooter e biciclette.
+            </p>
+            <div class="project-technologies">
+              <p class="technology">TYPESCRIPT</p>
+              <p class="technology">CODEPEN</p>
+              <p class="technology">GIT</p>
+              <p class="technology">GITHUB</p>
+              <p class="technology">OOP</p>
+            </div>
+            <div class="buttons">
+              <div class="site-button">
+                <a
+                  href="https://codepen.io/Cristian-Piovani/pen/vEYOawW?editors=0011"
+                  class="link-style"
+                  >Vai al sito</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section name="footer">
+      <div class="footer">
+        <p>Altri link interessanti:</p>
+
+        <div class="social">
+          <a class="footer-icon" href="" id="start2impact"
+            ><img src="./src/imgs/icone/space--shuttle.png" alt=""
+          /></a>
+
+          <a
+            class="footer-icon"
+            href="https://www.linkedin.com/in/cristianpiovani/"
+            id="linkedin"
+            ><img src="./src/imgs/icone/lkdn-logo-white.png" alt=""
+          /></a>
+
+          <a class="footer-icon" href="" id="gihub"
+            ><img src="./src/imgs/icone/github-mark-white.png" alt=""
+          /></a>
+        </div>
+        <h2 class="subtitle">Dove Trovarmi:</h2>
+        <p>09045, Quartu Sant'Elena, Cagliari</p>
+        <p>Sito web Cristian Piovani</p>
+      </div>
+    </section>
+    <script src="src/javascript/script.js"></script>
+  </body>
+</html>

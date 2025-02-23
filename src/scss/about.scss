@@ -1,0 +1,142 @@
+@import "./utility";
+.about-span {
+  font-weight: 700;
+}
+.other-info {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+
+.edu-container {
+  @extend .flex-start-center;
+  @extend .container;
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  gap: 1em;
+  margin-top: 40px;
+  width: 100%;
+
+  .course {
+    background-color: darken($dark-accent, $amount: 25);
+    border: solid $dark-accent 2px;
+    border-radius: 5px;
+    padding: 5px;
+
+    .edu-type {
+      font-weight: 600;
+      line-height: 1em;
+      margin: 0px;
+    }
+    .edu-years {
+      font-weight: 400;
+      font-size: 0.8em;
+      color: lighten($bg-color, $amount: 60);
+      line-height: 0em;
+    }
+  }
+}
+
+.hobby-container {
+  @extend .flex-start-center;
+  @extend .container;
+  margin-top: 40px;
+  flex-direction: column;
+  .hobby-type {
+    font-size: 1.2em;
+  }
+  .hobbies-container {
+    padding: 0px 10px;
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 8px;
+    row-gap: 4px;
+    flex-wrap: wrap;
+    .hobby {
+      background-color: $bg-color;
+      font-size: 0.8em;
+      padding: 3px 5px;
+      border-radius: 2px;
+      margin: 0px;
+    }
+  }
+}
+
+.last-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.buttons {
+  display: flex;
+  gap: 12px;
+  justify-content: end;
+
+  .cv-btn {
+    @extend .btn;
+
+    border: solid $text-color 1px;
+  }
+  .lkdn-btn {
+    @extend .btn;
+
+    background-color: $dark-accent;
+  }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 1080px) {
+  .other-info {
+    justify-content: space-between;
+    align-items: stretch;
+  }
+  .edu-container {
+    flex-direction: column;
+    gap: 1em;
+    width: 100%;
+  }
+  .edu-type {
+    font-weight: 600;
+    line-height: 1em;
+  }
+  .edu-years {
+    font-weight: 400;
+    font-size: 0.8em;
+    color: lighten($bg-color, $amount: 60);
+    line-height: 1em;
+  }
+  .hobby-container {
+    flex-shrink: 10;
+    // width: 70%;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  .other-info {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .edu-container {
+    flex-direction: column;
+    gap: 1em;
+    width: 100%;
+  }
+  .edu-type {
+    font-weight: 600;
+    line-height: 1em;
+    // margin: 0px;
+  }
+  .edu-years {
+    font-weight: 400;
+    font-size: 0.8em;
+    color: lighten($bg-color, $amount: 60);
+    line-height: 1em;
+  }
+  .hobby-container {
+    flex-shrink: 10;
+  }
+}

@@ -1,0 +1,248 @@
+@import "utility";
+@import "about.scss";
+.start {
+  @extend .total-container;
+}
+
+.navbar {
+  position: fixed;
+  background-color: lighten($bg-color, $amount: 10);
+  width: 80%;
+  color: $text-color;
+  font-size: 0.8em;
+  bottom: 20px;
+  padding: 5px 20px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-self: center;
+  align-self: center;
+  gap: 4px;
+  z-index: 10;
+  .lkdn-icon {
+    width: 20px;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.github-card {
+  @extend .flex-center;
+  @extend .container;
+  margin: 24px 0px;
+  margin-top: 100px;
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+  .avatar-container {
+    @extend .flex-center;
+  }
+  #avatar {
+    width: 80%;
+    border-radius: 100%;
+  }
+  #username {
+    @extend .title;
+  }
+  #bio {
+    padding-top: 10px;
+    font-size: 1em;
+    text-align: center;
+  }
+  .secondary-info {
+    @extend .flex-center;
+    gap: 16px;
+    #repos {
+      text-align: center;
+    }
+  }
+}
+.skills-container {
+  @extend .flex-start-center;
+  gap: 2em;
+  flex-wrap: wrap;
+  img {
+    width: 50px;
+    margin-bottom: 10px;
+  }
+  .base-circle {
+    @extend .flex-start-center;
+    //   padding: 1px;
+    background-color: $text-color;
+    height: 4px;
+    border-radius: 5px;
+    justify-content: flex-start;
+
+    .progress-circle {
+      @extend .base-circle;
+      background-color: $dark-accent;
+      padding: 1px;
+    }
+  }
+}
+.project-container {
+  @extend .flex-start-center;
+  margin: 32px 0px;
+  padding-bottom: 10px;
+  background-color: lighten($bg-color, $amount: 5);
+  width: 100%;
+  border-radius: 10px;
+  flex-direction: column;
+
+  .project-image-container {
+    width: 100%;
+    align-self: flex-end;
+    object-fit: fill;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+
+    .project-image {
+      width: 100%;
+      border-radius: 10px;
+      align-self: center;
+    }
+  }
+
+  .project-name {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-size: 1.5em;
+    padding-left: 10px;
+  }
+  .project-description {
+    margin-top: 0px;
+    padding-left: 10px;
+  }
+  .project-technologies {
+    padding: 0px 10px;
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 12px;
+    row-gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  .technology {
+    background-color: $bg-color;
+    font-size: 0.8em;
+    margin: 0px;
+    padding: 3px 5px;
+    border-radius: 2px;
+  }
+
+  .site-button {
+    @extend .flex-center;
+    height: 30px;
+    margin: 10px;
+    padding: 10px;
+    font-weight: 400;
+    border-radius: 5px;
+    background-color: $dark-accent;
+  }
+}
+@media only screen and (min-width: 1080px) {
+  .navbar {
+    width: 50%;
+    align-self: center;
+    justify-self: center;
+    .lkdn-icon {
+      width: 20px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .start {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+  }
+  .titles {
+    width: 40%;
+  }
+
+  .github-card {
+    margin-top: 50px;
+    margin-right: 0px;
+    #bio {
+      font-size: 1.8em;
+    }
+    .secondary-info {
+      gap: 24px;
+      #repos {
+        font-size: 1.2em;
+      }
+      #place {
+        font-size: 1.2em;
+      }
+    }
+  }
+  .skills-container {
+    gap: 4em;
+    img {
+      width: 100px;
+      margin-bottom: 10px;
+    }
+  }
+  .project-container {
+    .project-name {
+      font-size: 1.8em;
+    }
+
+    .project-description {
+      font-size: 1.2em;
+    }
+
+    .technology {
+      font-size: 1em;
+    }
+  }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 1080px) {
+  .navbar {
+    width: 50%;
+    align-self: center;
+    .lkdn-icon {
+      width: 20px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .github-card {
+    margin-top: 180px;
+    #bio {
+      font-size: 1.8em;
+    }
+    .secondary-info {
+      font-size: 1.5em;
+      gap: 16px;
+      #repos {
+        font-size: 0.8em;
+      }
+      #place {
+        font-size: 0.8em;
+      }
+    }
+  }
+
+  .skills-container {
+    gap: 4em;
+    img {
+      width: 80px;
+      margin-bottom: 10px;
+    }
+  }
+  .project-container {
+    .project-name {
+      font-size: 1.5em;
+    }
+  }
+}
