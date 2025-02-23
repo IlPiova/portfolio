@@ -7,12 +7,12 @@
   flex-direction: column;
   align-items: start;
   justify-content: center;
+  align-items: stretch;
 }
 
 .edu-container {
   @extend .flex-start-center;
   @extend .container;
-  display: flex;
   align-items: stretch;
   flex-direction: column;
   gap: 1em;
@@ -90,6 +90,10 @@
 }
 
 @media only screen and (min-width: 500px) and (max-width: 1080px) {
+  .description {
+    font-size: 1em;
+    line-height: 1.5em;
+  }
   .other-info {
     justify-content: space-between;
     align-items: stretch;
@@ -100,43 +104,64 @@
     width: 100%;
   }
   .edu-type {
-    font-weight: 600;
-    line-height: 1em;
+    font-size: 1.2em;
   }
   .edu-years {
-    font-weight: 400;
-    font-size: 0.8em;
-    color: lighten($bg-color, $amount: 60);
-    line-height: 1em;
+    font-size: 1em;
   }
   .hobby-container {
     flex-shrink: 10;
-    // width: 70%;
+  }
+
+  .buttons {
+    display: flex;
+    gap: 12px;
+    justify-content: end;
+
+    .cv-btn {
+      padding: 5px 10px;
+      font-size: 1em;
+    }
+    .lkdn-btn {
+      padding: 5px 10px;
+      font-size: 1em;
+    }
   }
 }
 
 @media only screen and (min-width: 1080px) {
+  .description {
+    font-size: 1.2em;
+  }
   .other-info {
     flex-direction: row;
     justify-content: space-between;
   }
   .edu-container {
-    flex-direction: column;
-    gap: 1em;
     width: 100%;
   }
   .edu-type {
-    font-weight: 600;
-    line-height: 1em;
-    // margin: 0px;
+    font-size: 1.2em;
   }
   .edu-years {
-    font-weight: 400;
-    font-size: 0.8em;
-    color: lighten($bg-color, $amount: 60);
-    line-height: 1em;
+    font-size: 1em;
   }
   .hobby-container {
     flex-shrink: 10;
+  }
+
+  .buttons {
+    display: flex;
+    gap: 12px;
+    justify-content: end;
+
+    .cv-btn {
+      padding: 8px 15px;
+      font-size: 1em;
+    }
+    .lkdn-btn {
+      padding: 8px 15px;
+      font-size: 1em;
+    }
   }
 }
